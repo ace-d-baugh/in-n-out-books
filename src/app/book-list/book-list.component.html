@@ -1,0 +1,35 @@
+<!--
+================================================
+  Title: book-list.component.html
+  Author: Ace Baugh
+  Date: 22 February 2023
+  Description: This is the book list component html file.
+================================================
+-->
+
+<ng-container *ngIf="books.length === 0">
+  <mat-spinner></mat-spinner>
+</ng-container>
+
+<div>
+  <h2 class="green">Top {{books.length}} Favorite Books</h2>
+</div>
+
+<div class="grid-container">
+  <ng-container *ngFor="let book of books">
+    <div class="grid-item">
+      <mat-card>
+        <mat-card-title>
+          <a (click)="showBookDetails(book.isbn)" class="blue">{{book.title}}</a>
+        </mat-card-title>
+        <mat-card-content>
+          <mat-list>
+            <mat-list-item>ISBN: {{ book.isbn }} </mat-list-item>
+            <mat-list-item>Pages: {{ book.numOfPages }} </mat-list-item>
+            <mat-list-item>Authors: {{ book.authors }} </mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </ng-container>
+</div>

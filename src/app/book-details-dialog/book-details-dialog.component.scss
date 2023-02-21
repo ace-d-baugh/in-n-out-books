@@ -1,0 +1,20 @@
+/*
+============================================
+, Title: book-details-dialog.component.scss
+; Author: Ace Baugh
+; Date: 22 February 2023
+; Description: This is the book-details-dialog.component.scss file for the in-n-out-books app
++===========================================
+*/
+
+mat-card-actions {
+  display: block;
+  text-align: end;
+}
+
+.book-details {
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 18px;
+  font-weight: lighter;
+}

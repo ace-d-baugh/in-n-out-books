@@ -1,0 +1,29 @@
+<!--
+================================================
+  Title: book-details-dialog.component.html
+  Author: Ace Baugh
+  Date: 22 February 2023
+  Description: This is the book-details-dialog component.
+================================================
+-->
+
+<!-- This is the book details dialog pop-up card. -->
+<mat-card class="book-details">
+  <mat-card-title class="blue">
+    <h3>{{ book.title }}</h3>
+  </mat-card-title>
+  <mat-card-content>
+    <!-- These are the book details -->
+    <div FxLayout="column">
+      <p>ISBN: {{ book.isbn }}</p>
+      <p>Description:<br> {{ book.description }}</p>
+      <p>Authors: <br> {{ book.authors }}</p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <!-- This is the close button -->
+    <button mat-raised-button color="accent" matDialogClose="confirm">
+      OK
+    </button>
+  </mat-card-actions>
+</mat-card>

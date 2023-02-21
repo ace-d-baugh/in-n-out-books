@@ -1,0 +1,28 @@
+/*
+============================================
+, Title: book-list.component.scss
+; Author: Ace Baugh
+; Date: 22 February 2023
+; Description: This is the main styles file for the book-list component
++===========================================
+*/
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 25px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+

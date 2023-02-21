@@ -1,0 +1,67 @@
+/*
+============================================
+, Title: styles.scss
+; Author: Ace Baugh
+; Date: 22 February 2023
+; Description: This is the main styles file
++===========================================
+*/
+
+@import "./theme";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// custom colors
+.blue {
+  color: #2196fe;
+}
+
+.green {
+  color: #66bb6a;
+}
+
+// link colors
+.attribution-link {
+  color: white;
+  text-decoration: none;
+}
+
+.attribution-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+// custom styles
+mat-card {
+  padding: 10px;
+}
+
+.card-title-icon {
+  text-align: center;
+}
+
+.card-title-icon {
+  font-size: 72px;
+
+}
+
+mat-icon {
+  height: 72px !important;
+  width: 72px !important;
+  font-size: 72px !important;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
